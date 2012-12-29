@@ -1,0 +1,4 @@
+*.pyc
+build
+dist
+drupal_services.egg-info
