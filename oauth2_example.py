@@ -29,7 +29,7 @@ def main():
     consumer = oauth2.Consumer(CONSUMER_KEY, CONSUMER_SECRET)
     token = oauth2.Token(TOKEN_KEY, TOKEN_SECRET)
 
-    client = oauth.Client(consumer, token)
+    client = oauth2.Client(consumer, token)
     proxy = Proxy(client, 'http://' + HOSTNAME + '/' + ENDPOINT)
 
     proxy.request('POST', 'user/login', {
